@@ -1,0 +1,12 @@
+    a:visited {
+      color: #f30808;
+      text-decoration: none;
+    }
+    a:hover {
+      color: rgb(66, 233, 24);
+      text-decoration: underline;
+    }
+    a:active {
+      color: rgb(105, 26, 231);
+      text-decoration: underline;
+    }
