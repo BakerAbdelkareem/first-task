@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <style>
+    .class1{
+      margin-left: 40px;
+    }
+  .class2 {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>Enter the following information please</h1>
+    <label for="First-Name">First name:</label>
+    <input type="text" id="First-Name" /><br /><br />
+    <label for="last-Name">Last name:</label>
+    <input type="text" id="last-Name" /><br /><br/>
+    <label for="Age">Age:</label>
+    <input type="text" id="Age" class="class1" /><br /><br />
+    <input type="submit" onclick="myFunction()" value="Submit" />
+    <table style="width: 40%" class="class2">
+      <tr>
+        <th class="class2">First name</th>
+        <th class="class2">Last name</th>
+        <th class="class2">Age</th>
+      </tr>
+      <tr>
+        <td id="FN" class="class2"></td>
+        <td id="LN" class="class2"></td>
+        <td id="AGE" class="class2"></td>
+      </tr>
+    </table>
+    <script>
+      function myFunction() {
+        var Fitst_Name = document.getElementById("First-Name").value;
+        var last_Name = document.getElementById("last-Name").value;
+        var age = document.getElementById("Age").value;
+        document.getElementById("FN").innerHTML = Fitst_Name;
+        document.getElementById("LN").innerHTML = last_Name;
+        document.getElementById("AGE").innerHTML = age;
+      }
+    </script>
+    <h3>
+      <a
+        href="https://www.facebook.com/profile.php?id=100004679952048"
+        target="_blank"
+      >
+        <strong>click here to see my Facebook account </strong></a
+      >
+    </h3>
+  </body>
+</html>
